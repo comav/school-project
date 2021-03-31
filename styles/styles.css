@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+body header {
+  background: #AEFE71;
+}
+
+body header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+body header .menu li {
+  margin: 5 5 5 5;
+  padding: 5 5 5 5;
+  margin-bottom: 3px;
+  list-style-type: none;
+  color: #01140D;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border-bottom: 3px solid #00000000;
+  text-decoration: none;
+}
+
+body header .menu li:hover {
+  border-bottom: 3px solid #01140D;
+}
+/*# sourceMappingURL=styles.css.map */
