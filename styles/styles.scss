@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 * {
     margin: 0 0 0 0;
@@ -39,6 +40,78 @@ body {
 
                 &:hover {
                     border-bottom: 3px solid #01140D;
+                }
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        background-color: #AEFE71;
+
+        aside {
+            flex-grow: 1;
+            height: 300px;
+            background-color: #04724D;
+            margin: 5 5 5 5;
+            border-radius: 5px;
+        }
+
+        article {
+            margin: 5 5 5 5;
+            flex-grow: 4;
+            height: 300px;
+            background-color: #b0fce3;
+            border-radius: 5px;    
+        }
+    }
+    
+    .center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .splide {
+        width: 100%
+    }
+
+    .bold {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .splide__slide {
+        width: 100%;
+        height: 600px;
+
+        .forest {
+            background-image: url("/assets/forest.png");
+            width: 100%;
+            height: 100%;
+
+            .text-wrapper {
+                padding-left: 80px;
+                padding-top: 30px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 600px;
+                p {
+                    padding-top: 50px;
+                }
+            }
+
+            .leaf {
+                display: absolute;
+
+                &1 {
+                    opacity: 0;
+                }
+                &2 {
+                    opacity: 0;
+                }
+                &3 {
+                    opacity: 0;
                 }
             }
         }
