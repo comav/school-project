@@ -33,7 +33,7 @@ anime({
 anime({
     targets: '.leaf3',
     translateX: 1200,
-    translateY: [randomY(3), randomY(3), randomY(3), randomY(3), randomY(3), randomY(3)],
+    translateY: [100, -55, 34],
     rotate: [0, randomDeg()],
     delay: 1000,
     direction: 'normal',

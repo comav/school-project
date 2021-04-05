@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
 * {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 a:visited {
@@ -16,9 +16,8 @@ a:link {
 }
 
 body {
-
     header {
-        background: #AEFE71;
+        background: #aefe71;
 
         .menu {
             display: flex;
@@ -33,51 +32,143 @@ body {
                 padding: 5 5 5 5;
                 margin-bottom: 3px;
                 list-style-type: none;
-                color: #01140D;
+                color: #01140d;
                 transition: all 0.1s ease-in-out;
                 border-bottom: 3px solid #00000000;
                 text-decoration: none;
 
                 &:hover {
-                    border-bottom: 3px solid #01140D;
+                    border-bottom: 3px solid #01140d;
                 }
             }
         }
     }
 
     main {
-        display: flex;
-        flex-direction: row;
-        background-color: #AEFE71;
+        // display: flex;
+        // flex-direction: row;
+        background-color: #aefe71;
 
         aside {
             flex-grow: 1;
             height: 300px;
-            background-color: #04724D;
+            background-color: #04724d;
             margin: 5 5 5 5;
             border-radius: 5px;
         }
 
         article {
             margin: 5 5 5 5;
-            flex-grow: 4;
-            height: 300px;
-            background-color: #b0fce3;
-            border-radius: 5px;    
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                font-size: 2em;
+                display: flex;
+            }
+
+            .nav {
+                display: flex;
+                justify-content: center;
+
+                div {
+                    flex-grow: 1;
+                    height: 300px;
+                    margin: 10 10 10 10;
+                    background-color: #a3fe5d;
+                }
+
+                &-card {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    position: relative;
+
+                    span {
+                        transition: all 0.5s ease-in-out;
+                    }
+
+                    p {
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 30px;
+                        z-index: 99;
+                        position: absolute;
+                        margin-left: 40px;
+                        transition: all 1s ease-in-out;
+                    }
+                }
+
+                .join-us {
+                    &:hover {
+                        p {
+                            margin-left: 100px;
+                        }
+
+                        span {
+                            color: black;
+                        }
+                    }
+                }
+
+                .help-us {
+                    &:hover {
+                        p {
+                            margin-left: 100px;
+                        }
+
+                        span {
+                            color: black;
+                        }
+                    }
+                }
+
+                .help-nature {
+                    &:hover {
+                        p {
+                            margin-left: 100px;
+                        }
+
+                        span {
+                            color: black;
+                        }
+                    }
+                }
+            }
         }
     }
-    
+
     .center {
         justify-content: center;
         align-items: center;
     }
 
     .splide {
-        width: 100%
+        width: 100%;
     }
 
     .bold {
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .material-icons {
+        font-size: 90px;
+        width: 100px;
+        height: 100px;
+        color: #8cfe34;
+    }
+
+    .text-wrapper {
+        padding-left: 80px;
+        padding-top: 30px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 600px;
+        p {
+            padding-top: 50px;
+        }
     }
 
     .splide__slide {
@@ -85,21 +176,11 @@ body {
         height: 600px;
 
         .forest {
-            background-image: url("/assets/forest.png");
+            background-image: url("https://i.pinimg.com/originals/29/0b/a0/290ba0313cfaffa60b10362dcb3c2505.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
             width: 100%;
             height: 100%;
-
-            .text-wrapper {
-                padding-left: 80px;
-                padding-top: 30px;
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
-                width: 600px;
-                p {
-                    padding-top: 50px;
-                }
-            }
 
             .leaf {
                 display: absolute;
@@ -114,6 +195,29 @@ body {
                     opacity: 0;
                 }
             }
+        }
+
+        .button {
+            margin-top: 20px;
+            background-color: #01140d;
+            border: none;
+            padding: 10 10 10 10;
+            color: #aefe71;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                box-shadow: 5 5 5 5 black;
+            }
+        }
+
+        .water {
+            background-image: url("https://nomad.pictures/wp-content/uploads/2016/03/beach-with-driftwood-1024x768.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
         }
     }
 }
