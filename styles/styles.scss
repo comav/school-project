@@ -67,6 +67,7 @@ body {
             h1 {
                 font-size: 2em;
                 display: flex;
+                margin: 10 0 10 0;
             }
 
             .nav {
@@ -85,6 +86,7 @@ body {
                     flex-direction: row;
                     align-items: center;
                     position: relative;
+                    cursor: pointer;
 
                     span {
                         transition: all 0.5s ease-in-out;
@@ -166,6 +168,9 @@ body {
         align-items: flex-start;
         flex-direction: column;
         width: 600px;
+        backdrop-filter: drop-shadow(4px 4px 10px white);
+        height: 100%;
+
         p {
             padding-top: 50px;
         }
@@ -218,6 +223,35 @@ body {
             background-size: cover;
             height: 100%;
             width: 100%;
+        }
+
+        .air {
+            background-image: url("https://i.pinimg.com/originals/14/ff/5a/14ff5a23635a4e40c6d00d5e3d0043b6.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+footer {
+    background: #202030;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .social {
+        width: 50px;
+        height: 50px;
+        padding: 25 25 25 25;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            width: 75px;
+            height: 75px;
         }
     }
 }

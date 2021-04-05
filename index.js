@@ -60,3 +60,7 @@ function randomY(leafNum) {
 function randomDeg() {
     return Math.floor(Math.random() * (360 - (-360) + 1)) + (-360);
 }
+
+function notReady () {
+    alert('Цей функціонал недоступний');
+}
