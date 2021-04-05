@@ -205,6 +205,7 @@ body .text-wrapper {
 
 body .text-wrapper p {
   padding-top: 50px;
+  font-size: 20px;
 }
 
 body .splide__slide {
@@ -296,5 +297,4 @@ footer .social:hover {
   width: 75px;
   height: 75px;
 }
-/* YEIIIII 300 */
 /*# sourceMappingURL=styles.css.map */
