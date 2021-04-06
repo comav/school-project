@@ -2,7 +2,9 @@
 
 <head>
     <title>Збережемо природу!</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="styles/styles.css" media="screen">
+    <link rel="stylesheet" href="styles/styles-mobile.css" media="screen and (max-device-width:800px)">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -24,7 +26,7 @@
         </ul>
     </header>
     <main>
-        <div class="splide">
+        <div class="splide" data-splide='{"type":"loop", "arrows":false, "autoplay":true, "interval":10000}'>
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">

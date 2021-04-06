@@ -16,31 +16,13 @@ a:link {
 }
 
 body {
+    width: 100%;
+    
     header {
         background: #aefe71;
 
         .menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            text-decoration: none;
-            position: sticky;
-            top: 0;
-
-            li {
-                margin: 5;
-                padding: 5;
-                margin-bottom: 3px;
-                list-style-type: none;
-                color: #01140d;
-                transition: all 0.1s ease-in-out;
-                border-bottom: 3px solid #00000000;
-                text-decoration: none;
-
-                &:hover {
-                    border-bottom: 3px solid #01140d;
-                }
-            }
+            display: none;
         }
     }
 
@@ -48,14 +30,6 @@ body {
         // display: flex;
         // flex-direction: row;
         background-color: #aefe71;
-
-        aside {
-            flex-grow: 1;
-            height: 300px;
-            background-color: #04724d;
-            margin: 5;
-            border-radius: 5px;
-        }
 
         article {
             margin: 5;
@@ -73,23 +47,27 @@ body {
             .nav {
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
+
+                p {
+                    margin-top: 100px;
+                }
 
                 div {
-                    flex-grow: 1;
-                    height: 300px;
+                    height: 250px;
                     margin: 10;
                     background-color: #a3fe5d;
                 }
 
                 &-card {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     align-items: center;
                     position: relative;
                     cursor: pointer;
 
                     span {
-                        transition: all 0.5s ease-in-out;
+                        color: black;
                     }
 
                     p {
@@ -97,48 +75,10 @@ body {
                         font-size: 30px;
                         z-index: 99;
                         position: absolute;
-                        margin-left: 40px;
-                        transition: all 1s ease-in-out;
-                    }
-                }
-
-                .join-us {
-                    &:hover {
-                        p {
-                            margin-left: 100px;
-                        }
-
-                        span {
-                            color: black;
-                        }
-                    }
-                }
-
-                .help-us {
-                    &:hover {
-                        p {
-                            margin-left: 100px;
-                        }
-
-                        span {
-                            color: black;
-                        }
-                    }
-                }
-
-                .help-nature {
-                    &:hover {
-                        p {
-                            margin-left: 100px;
-                        }
-
-                        span {
-                            color: black;
-                        }
                     }
                 }
             }
-        }
+        }   
     }
 
     .center {
@@ -162,59 +102,31 @@ body {
     }
 
     .text-wrapper {
-        padding-left: 80px;
+        padding-left: 20px;
         padding-top: 30px;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        width: 600px;
-        backdrop-filter: drop-shadow(4px 4px 10px white);
         height: 100%;
+        width: 90%;
 
         p {
             padding-top: 50px;
             font-size: 20px;
+            text-shadow: white 0px 0px 10px;
         }
     }
 
     .splide__slide {
-        width: 100%;
         height: 600px;
 
         .forest {
             background-image: url("https://i.pinimg.com/originals/29/0b/a0/290ba0313cfaffa60b10362dcb3c2505.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            width: 100%;
-            height: 100%;
 
             .leaf {
-                display: absolute;
-
-                &1 {
-                    opacity: 0;
-                }
-                &2 {
-                    opacity: 0;
-                }
-                &3 {
-                    opacity: 0;
-                }
-            }
-        }
-
-        .button {
-            margin-top: 20px;
-            background-color: #01140d;
-            border: none;
-            padding: 10;
-            color: #aefe71;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.2s ease-in-out;
-
-            &:hover {
-                box-shadow: 5 black;
+                display: none;
             }
         }
 
@@ -249,11 +161,6 @@ footer {
         padding: 25;
         transition: all 0.2s ease-in-out;
         cursor: pointer;
-
-        &:hover {
-            width: 75px;
-            height: 75px;
-        }
     }
 }
 
