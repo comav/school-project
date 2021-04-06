@@ -64,3 +64,12 @@ function randomDeg() {
 function notReady () {
     alert('Цей функціонал недоступний');
 }
+
+function joinUs () {
+    let memberData = {};
+    let name = prompt("Будь ласка, введіть ваше ім'я");
+    let contact = prompt("Введіть ваший номер телефону або адресу E-Mail");
+    memberData.name = name;
+    memberData.contact = contact;
+    
+}
