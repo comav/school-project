@@ -15,7 +15,7 @@ a:link {
 }
 
 body header {
-  background: #aefe71;
+  background: #50c878;
 }
 
 body header .menu {
@@ -52,7 +52,7 @@ body header .menu li:hover {
 }
 
 body main {
-  background-color: #aefe71;
+  background-color: #50c878;
 }
 
 body main aside {
@@ -103,7 +103,8 @@ body main article .nav div {
           flex-grow: 1;
   height: 300px;
   margin: 10;
-  background-color: #a3fe5d;
+  background-color: #00c97f;
+  border-radius: 5px;
 }
 
 body main article .nav-card {
@@ -181,7 +182,7 @@ body .material-icons {
   font-size: 90px;
   width: 100px;
   height: 100px;
-  color: #8cfe34;
+  color: #008F5A;
 }
 
 body .text-wrapper {
@@ -206,6 +207,7 @@ body .text-wrapper {
 body .text-wrapper p {
   padding-top: 50px;
   font-size: 20px;
+  -webkit-text-stroke: 0.1px white;
 }
 
 body .splide__slide {
@@ -235,23 +237,6 @@ body .splide__slide .forest .leaf2 {
 
 body .splide__slide .forest .leaf3 {
   opacity: 0;
-}
-
-body .splide__slide .button {
-  margin-top: 20px;
-  background-color: #01140d;
-  border: none;
-  padding: 10;
-  color: #aefe71;
-  border-radius: 5px;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-body .splide__slide .button:hover {
-  -webkit-box-shadow: 5 black;
-          box-shadow: 5 black;
 }
 
 body .splide__slide .water {

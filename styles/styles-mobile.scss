@@ -56,7 +56,8 @@ body {
                 div {
                     height: 250px;
                     margin: 10;
-                    background-color: #a3fe5d;
+                    background-color: #00c97f;
+                    border-radius: 5px;
                 }
 
                 &-card {
@@ -98,7 +99,7 @@ body {
         font-size: 90px;
         width: 100px;
         height: 100px;
-        color: #8cfe34;
+        color: #008F5A;
     }
 
     .text-wrapper {
@@ -113,7 +114,7 @@ body {
         p {
             padding-top: 50px;
             font-size: 20px;
-            text-shadow: white 0px 0px 10px;
+            -webkit-text-stroke: 0.1px white;
         }
     }
 
