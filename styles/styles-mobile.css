@@ -19,7 +19,7 @@ body {
 }
 
 body header {
-  background: #aefe71;
+  background: #50c878;
 }
 
 body header .menu {
@@ -27,7 +27,7 @@ body header .menu {
 }
 
 body main {
-  background-color: #aefe71;
+  background-color: #50c878;
 }
 
 body main article {
@@ -90,6 +90,7 @@ body main article .nav-card {
           align-items: center;
   position: relative;
   cursor: pointer;
+  text-align: center;
 }
 
 body main article .nav-card span {
@@ -142,12 +143,12 @@ body .text-wrapper {
           flex-direction: column;
   height: 100%;
   width: 90%;
+  color: white;
 }
 
 body .text-wrapper p {
   padding-top: 50px;
   font-size: 20px;
-  -webkit-text-stroke: 0.1px white;
 }
 
 body .splide__slide {
@@ -158,6 +159,7 @@ body .splide__slide .forest {
   background-image: url("https://i.pinimg.com/originals/29/0b/a0/290ba0313cfaffa60b10362dcb3c2505.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 body .splide__slide .forest .leaf {

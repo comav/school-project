@@ -1,3 +1,5 @@
+@import 'variables';
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
@@ -19,7 +21,7 @@ body {
     width: 100%;
     
     header {
-        background: #aefe71;
+        background: $bg-color;
 
         .menu {
             display: none;
@@ -29,7 +31,7 @@ body {
     main {
         // display: flex;
         // flex-direction: row;
-        background-color: #aefe71;
+        background-color: $bg-color;
 
         article {
             margin: 5;
@@ -66,6 +68,7 @@ body {
                     align-items: center;
                     position: relative;
                     cursor: pointer;
+                    text-align: center;
 
                     span {
                         color: black;
@@ -110,11 +113,11 @@ body {
         flex-direction: column;
         height: 100%;
         width: 90%;
+        color: white;
 
         p {
             padding-top: 50px;
             font-size: 20px;
-            -webkit-text-stroke: 0.1px white;
         }
     }
 
@@ -125,6 +128,7 @@ body {
             background-image: url("https://i.pinimg.com/originals/29/0b/a0/290ba0313cfaffa60b10362dcb3c2505.jpg");
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
 
             .leaf {
                 display: none;
