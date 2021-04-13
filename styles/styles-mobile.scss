@@ -20,7 +20,7 @@ a:link {
 body {
     width: 100%;
     background-color: $bg-color;
-    
+
     header {
         background: $bg-color;
 
@@ -89,7 +89,7 @@ body {
                     }
                 }
             }
-        }   
+        }
     }
 
     .center {
@@ -160,7 +160,19 @@ body {
             background: linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.6)
-            ), url("https://images.theconversation.com/files/77215/original/image-20150407-26479-9504jx.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0");
+            ), url("https://i.pinimg.com/originals/14/ff/5a/14ff5a23635a4e40c6d00d5e3d0043b6.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .batteries {
+            padding-top: 50px;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ), url("https://images.theconversation.com/files/77215/original/image-20150407-26479-9504jx.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             height: 100%;
@@ -184,29 +196,54 @@ footer {
     }
 }
 
-.contacts {
+footer {
+    background: #202030;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    justify-content: space-around;
+    margin: none;
 
-    h1 {
-        margin-bottom: 30px;
+    .social {
+        width: 50px;
+        height: 50px;
+        padding: 25;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            width: 65px;
+            height: 65px;
+            padding: 10;
+        }
     }
-    span {
+
+    .tel-email {
         display: flex;
+        color: $el-color;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
         justify-content: center;
-    }
+        align-items: center;
 
-    .material-icons {
-        font-size: 50px;
-        width: auto;
-        height: auto;
-        color: black;
-        margin-right: 10px;
-    }
+        span {
+            height: auto;
+            align-self: flex-start;
 
-    .contacts-info {
-        font-size: 30px;
+            &:first-child {
+                margin-bottom: 5px;
+            }
+
+            &:last-child {
+                margin-top: 5px;
+            }
+
+            .material-icons {
+                font-size: 1.5em;
+                width: auto;
+            }
+        }
     }
 }
