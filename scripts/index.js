@@ -4,18 +4,18 @@ new Splide('.splide').mount();
 
 //vanta.js
 
-VANTA.TOPOLOGY({
-    el: ".forest",
-    mouseControls: false,
-    touchControls: false,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0x00c97f,
-    backgroundColor: 0x00
-  })
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', () => {
+    let currentScrollPos = window.pageYOffset;
+    let nav = document.getElementById('nav');
+    if (prevScrollPos > currentScrollPos) {
+        nav.style.top = "0px";
+    } else {
+        nav.style.top = "-50px";
+    }
+    prevScrollPos = currentScrollPos;
+})
 
 //functions
 
@@ -26,8 +26,12 @@ function notReady () {
 function joinUs () {
     let memberData = {};
     let name = prompt("Будь ласка, введіть ваше ім'я");
-    let contact = prompt("Введіть ваший номер телефону або адресу E-Mail");
-    memberData.name = name;
-    memberData.contact = contact;
+    if (name === null ) {
+        return;
+    } else {
+        let contact = prompt("Введіть ваший номер телефону або адресу E-Mail");
+        memberData.name = name;
+        memberData.contact = contact;
+    }
     
 }

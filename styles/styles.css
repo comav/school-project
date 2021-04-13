@@ -30,9 +30,13 @@ body header .menu {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 999;
+  background: #50c878;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 body header .menu li {
@@ -204,31 +208,19 @@ body .splide__slide {
 }
 
 body .splide__slide .forest {
-  background: black;
+  padding-top: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://i.pinimg.com/originals/29/0b/a0/290ba0313cfaffa60b10362dcb3c2505.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/originals/29/0b/a0/290ba0313cfaffa60b10362dcb3c2505.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 
-body .splide__slide .forest .leaf {
-  display: absolute;
-}
-
-body .splide__slide .forest .leaf1 {
-  opacity: 0;
-}
-
-body .splide__slide .forest .leaf2 {
-  opacity: 0;
-}
-
-body .splide__slide .forest .leaf3 {
-  opacity: 0;
-}
-
 body .splide__slide .water {
-  background-image: url("https://nomad.pictures/wp-content/uploads/2016/03/beach-with-driftwood-1024x768.jpg");
+  padding-top: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://nomad.pictures/wp-content/uploads/2016/03/beach-with-driftwood-1024x768.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://nomad.pictures/wp-content/uploads/2016/03/beach-with-driftwood-1024x768.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -236,7 +228,19 @@ body .splide__slide .water {
 }
 
 body .splide__slide .air {
-  background-image: url("https://i.pinimg.com/originals/14/ff/5a/14ff5a23635a4e40c6d00d5e3d0043b6.png");
+  padding-top: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://i.pinimg.com/originals/14/ff/5a/14ff5a23635a4e40c6d00d5e3d0043b6.png") rgba(0, 0, 0, 0.6);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/originals/14/ff/5a/14ff5a23635a4e40c6d00d5e3d0043b6.png") rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+body .splide__slide .batteries {
+  padding-top: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://images.theconversation.com/files/77215/original/image-20150407-26479-9504jx.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.theconversation.com/files/77215/original/image-20150407-26479-9504jx.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;

@@ -26,8 +26,12 @@ body {
             flex-direction: row;
             justify-content: center;
             text-decoration: none;
-            position: sticky;
+            position: fixed;
             top: 0;
+            z-index: 999;
+            background: $bg-color;
+            width: 100%;
+            transition: all 0.2s ease-in-out;
 
             li {
                 margin: 5;
@@ -177,29 +181,23 @@ body {
         height: 600px;
 
         .forest {
-            background: black;
+            padding-top: 50px;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ), url("https://i.pinimg.com/originals/29/0b/a0/290ba0313cfaffa60b10362dcb3c2505.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
             height: 100%;
-
-            .leaf {
-                display: absolute;
-
-                &1 {
-                    opacity: 0;
-                }
-                &2 {
-                    opacity: 0;
-                }
-                &3 {
-                    opacity: 0;
-                }
-            }
         }
 
         .water {
-            background-image: url("https://nomad.pictures/wp-content/uploads/2016/03/beach-with-driftwood-1024x768.jpg");
+            padding-top: 50px;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ), url("https://nomad.pictures/wp-content/uploads/2016/03/beach-with-driftwood-1024x768.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             height: 100%;
@@ -207,7 +205,23 @@ body {
         }
 
         .air {
-            background-image: url("https://i.pinimg.com/originals/14/ff/5a/14ff5a23635a4e40c6d00d5e3d0043b6.png");
+            padding-top: 50px;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ), url("https://i.pinimg.com/originals/14/ff/5a/14ff5a23635a4e40c6d00d5e3d0043b6.png") rgba(0, 0, 0, 0.6);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .batteries {
+            padding-top: 50px;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ), url("https://images.theconversation.com/files/77215/original/image-20150407-26479-9504jx.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             height: 100%;
