@@ -14,6 +14,10 @@ a:link {
   text-decoration: none;
 }
 
+body {
+  background-color: #50c878;
+}
+
 body header {
   background: #50c878;
 }
@@ -249,16 +253,20 @@ body .splide__slide .batteries {
 
 footer {
   background: #202030;
-  height: 100px;
+  height: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: none;
 }
 
 footer .social {
@@ -271,46 +279,49 @@ footer .social {
 }
 
 footer .social:hover {
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
+  padding: 10;
 }
 
-.contacts {
+footer .tel-email {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  color: #00c97f;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.5em;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  justify-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
-.contacts h1 {
-  margin-bottom: 30px;
-}
-
-.contacts span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contacts .material-icons {
-  font-size: 50px;
-  width: auto;
+footer .tel-email span {
   height: auto;
-  color: black;
-  margin-right: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
-.contacts .contacts-info {
-  font-size: 30px;
+footer .tel-email span:first-child {
+  margin-bottom: 5px;
+}
+
+footer .tel-email span:last-child {
+  margin-top: 5px;
+}
+
+footer .tel-email span .material-icons {
+  font-size: 1.5em;
+  width: auto;
 }
 /*# sourceMappingURL=styles.css.map */
