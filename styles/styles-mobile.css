@@ -185,8 +185,18 @@ body .splide__slide .water {
 }
 
 body .splide__slide .air {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://images.theconversation.com/files/77215/original/image-20150407-26479-9504jx.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0");
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.theconversation.com/files/77215/original/image-20150407-26479-9504jx.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://i.pinimg.com/originals/14/ff/5a/14ff5a23635a4e40c6d00d5e3d0043b6.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/originals/14/ff/5a/14ff5a23635a4e40c6d00d5e3d0043b6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+body .splide__slide .batteries {
+  padding-top: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("https://images.theconversation.com/files/77215/original/image-20150407-26479-9504jx.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.theconversation.com/files/77215/original/image-20150407-26479-9504jx.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -216,7 +226,7 @@ footer .social {
 
 footer {
   background: #202030;
-  height: 200px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,6 +274,7 @@ footer .tel-email {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: auto;
 }
 
 footer .tel-email span {
@@ -278,6 +289,7 @@ footer .tel-email span:first-child {
 
 footer .tel-email span:last-child {
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 footer .tel-email span .material-icons {

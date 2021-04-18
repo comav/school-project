@@ -32,6 +32,15 @@ function joinUs () {
         let contact = prompt("Введіть ваший номер телефону або адресу E-Mail");
         memberData.name = name;
         memberData.contact = contact;
+
+        const response = fetch('http://127.0.0.1:8800/newmember', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(memberData)
+    })
     }
     
 }
