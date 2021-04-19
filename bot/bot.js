@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
-let membersList = [];
+let membersList = ['none'];
 let stickerArr = [
     { "id": "CAACAgUAAxkBAAECMwtgfGgZrBr_2MFM-VqNTQABywkeJ-0AAnkAA-vVjA7XhddiBhbHtR8E" },
     { "id": "CAACAgIAAxkBAAECMw1gfGi6i2KgQPpiQZq9vyqloehXMAACLAkAAryT2EhOI9U2ONvszR8E" },
@@ -48,6 +48,9 @@ app.get('/', (req, res) => {
 app.post('/newmember', (req, res) => {
     let memberName = req.body.name;
     let memberContact = req.body.contact;
+    if (membersList[0] == 'none') {
+        membersList.pop();
+    }
     membersList.push({
         "name": memberName,
         "contacts": memberContact
@@ -58,12 +61,19 @@ app.post('/newmember', (req, res) => {
 })
 
 bot.command('check', (ctx) => {
-    membersList.forEach((item, index, arr) => {
-        ctx.replyWithSticker(random());
-        ctx.reply(membersList[index].name + ' бажає приєднатися, його контакти: ' + membersList[index].contacts);
-        console.log(membersList[index].contacts);
-        console.log(membersList[index].name);
-    });
+    if (membersList[0] == 'none') {
+        console.log('!!!');
+        ctx.reply('Зараз немає нових заявок. Перевірте пізніше.')
+    } else {
+        membersList.forEach((item, index, arr) => {
+            ctx.replyWithSticker(random());
+            ctx.reply(membersList[index].name + ' бажає приєднатися, його контакти: ' + membersList[index].contacts);
+            console.log(membersList[index].contacts);
+            console.log(membersList[index].name);
+        });
+        membersList = ['none'];
+        console.log(membersList);
+    }
 })
 
 function random() {
